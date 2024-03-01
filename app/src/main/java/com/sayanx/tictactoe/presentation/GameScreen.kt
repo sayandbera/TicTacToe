@@ -75,7 +75,6 @@ fun GameScreen(viewModel: GameViewModel) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
-
         // Top Section:
         Row(
             modifier = Modifier
@@ -184,7 +183,6 @@ fun GameScreen(viewModel: GameViewModel) {
                 }
             }
         }
-
 
         // Bellow button and text section
         Row(

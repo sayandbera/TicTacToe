@@ -76,12 +76,14 @@ class GameViewModel: ViewModel() {
                     currentTurn = BoardCellValue.NONE,
                     playerCircleWinCount = _state.value.playerCircleWinCount + 1
                 )
+                return
             } else if (gameHasDrawn()) {
                 _state.value = _state.value.copy(
                     gameStateHint = GameStateHint.DRAW,
                     currentTurn = BoardCellValue.NONE
                 )
                 showToastMessage(context,"It's a draw! ")
+                return
             }
             _state.value = _state.value.copy(
                 currentTurn = BoardCellValue.CROSS
@@ -94,12 +96,14 @@ class GameViewModel: ViewModel() {
                     currentTurn = BoardCellValue.NONE,
                     playerCrossWinCount = _state.value.playerCrossWinCount + 1
                 )
+                return
             } else if (gameHasDrawn()) {
                 showToastMessage(context,"It's a draw!")
                 _state.value = _state.value.copy(
                     gameStateHint = GameStateHint.DRAW,
                     currentTurn = BoardCellValue.NONE
                 )
+                return
             }
             _state.value = _state.value.copy(
                 currentTurn = BoardCellValue.CIRCLE
