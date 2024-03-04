@@ -8,6 +8,7 @@ Open Source: Feel free to explore, contribute, and provide feedback. Your suppor
 Demo
 
 ## Demo video
-
 https://github.com/sayandbera/TicTacToe/assets/138639834/d1cde711-5ee8-4bd6-a79c-583a2776a9d8
 
+## Download the App
+- [Download the Latest APK](https://github.com/sayandbera/TicTacToe/releases/tag/1.0.0)
